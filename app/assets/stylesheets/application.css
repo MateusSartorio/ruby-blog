@@ -13,3 +13,152 @@
  *= require_tree .
  *= require_self
  */
+
+*{
+    font: 1.2rem "Fira Sans", sans-serif !important;
+    --background-color: #10002b;
+    --primary-color: #9d4edd;
+    --secondary-color: #e0aaff;
+    --terciary-color: #240046;
+    
+}
+
+body{
+    animation: cores 3s;
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    grid-area: span;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+    background-color: var(--background-color);
+    /* background-image: url(https://i.redd.it/6d12g42n17z91.jpg); */
+    background-repeat: no-repeat;
+    background-size: 2rem;
+
+    color: white;
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    margin-bottom: 0;
+}
+
+form {
+    position: relative;
+    width: 50vw;
+}
+
+div {
+    margin: 0.5rem;
+}
+
+label {
+    font-size: 1rem !important;
+    /* border: 2px solid red; */
+}
+
+input, textarea, select {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0.3rem 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+textarea{
+    resize: vertical;
+    height: 10rem;
+}
+
+input {
+    background-color: white;
+    color: black;
+}
+
+textarea {
+    background-color: white;
+    color: black;
+    resize: none;
+
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: white;
+    width: 30%;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: var(--terciary-color);
+}
+
+a {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+select, option{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    width: 30%;
+}
+
+select:hover {
+    text-decoration: none;
+}
+
+.meu-mano-pedra{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.meu-mano-pedra:hover{
+    animation: rodadinha 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    animation-iteration-count: 2;
+}
+
+@keyframes rodadinha{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(-20deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(20deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.articles {
+    margin-bottom: 1rem;
+}
+
+.article-title {
+    margin-top: 5rem;
+}

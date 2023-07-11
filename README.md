@@ -1,2 +1,2 @@
-# ruby_calculator
-An web calculator made with Ruby on Rails.
+# ruby-blog
+A simple blog website made withh Ruby on Rails.
