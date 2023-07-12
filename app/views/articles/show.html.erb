@@ -1,8 +1,10 @@
+<img src="https://i.redd.it/6d12g42n17z91.jpg" alt="" class="meu-mano-pedra"/>
+
 <h1 class="article-title"><%= @article.title %></h1>
 
-<p><%= @article.body %></p>
+<p class="article-body"><%= @article.body %></p>
 
-<ul>
+<ul class="edit-delete-article">
   <li><%= link_to "Edit", edit_article_path(@article) %></li>
   <li><%= link_to "Delete", article_path(@article), data: {
                     turbo_method: :delete,
@@ -15,3 +17,6 @@
 
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
+
+<%= link_to "Início", root_path %>
+<div class="space-taker"><br></div>

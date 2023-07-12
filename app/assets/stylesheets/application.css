@@ -25,31 +25,41 @@
 
 body{
     animation: cores 3s;
-    display: grid;
-    grid-template-columns: repeat(1, fr);
-    grid-area: span;
-    justify-content: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+
     justify-items: center;
     align-items: center;
 
     background-color: var(--background-color);
-    /* background-image: url(https://i.redd.it/6d12g42n17z91.jpg); */
-    background-repeat: no-repeat;
-    background-size: 2rem;
 
     color: white;
 
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.artigos-itens {
+    margin: 1rem;
+    text-align: center;
 }
 
 h1 {
     font-size: 2rem !important;
     font-weight: bold !important;
     margin-bottom: 0;
+}
+
+h2 {
+    margin: 3rem 0 0 0;
+    font-weight: bolder !important;
 }
 
 form {
@@ -91,9 +101,9 @@ input, textarea, select {
     width: 100%;
 }
 
-textarea{
+textarea {
     resize: vertical;
-    height: 10rem;
+    height: 15rem;
 }
 
 input {
@@ -105,7 +115,6 @@ textarea {
     background-color: white;
     color: black;
     resize: none;
-
 }
 
 input[type="submit"] {
@@ -113,6 +122,7 @@ input[type="submit"] {
     cursor: pointer;
     color: white;
     width: 30%;
+    text-align: center;
 }
 
 input[type="submit"]:hover,
@@ -125,7 +135,7 @@ a {
     color: yellowgreen;
 }
 
-select, option{
+select, option {
     text-decoration: none;
     background-color: white;
     color: black;
@@ -136,13 +146,14 @@ select:hover {
     text-decoration: none;
 }
 
-.meu-mano-pedra{
+.meu-mano-pedra {
     height: 8rem;
     width: 8rem;
     border-radius: 50%;
+    margin-top: 3rem;
 }
 
-.meu-mano-pedra:hover{
+.meu-mano-pedra:hover {
     animation: rodadinha 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
     animation-iteration-count: 2;
 }
@@ -161,4 +172,30 @@ select:hover {
 
 .article-title {
     margin-top: 5rem;
+}
+
+.edit-delete-article {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.edit-delete-article > li {
+    text-align: center;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.article-body {
+    white-space: pre-wrap;
+}
+
+.comment {
+    width: 50%;
+}
+
+.space-taker {
+    margin-top: 1rem;
 }
