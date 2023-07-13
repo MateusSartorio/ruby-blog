@@ -1,7 +1,7 @@
 # ruby-blog
 A simple blog website made withh Ruby on Rails.
 
-## Building the application
+## Setting up prerequisites
 
 First make sure you have all the dependencies.
 
@@ -38,6 +38,8 @@ Rails 7.0.5
 ```
 
 You should be good to go now.
+
+## Running the application
 
 Clone this repo locally on your machine, go the its root directory, and run:
 
